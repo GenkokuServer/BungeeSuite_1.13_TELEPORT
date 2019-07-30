@@ -4,7 +4,7 @@
 
 plugins {
     id 'java'
-    id 'maven-publish'
+    id "com.github.kamatama41.git-release" version "0.3.0"
 }
 
 repositories {
@@ -27,12 +27,10 @@ version = '1.0-SNAPSHOT'
 description = 'bungeesuite-teleport'
 sourceCompatibility = '1.8'
 
-publishing {
-    publications {
-        maven(MavenPublication) {
-            from(components.java)
-        }
-    }
+gitRelease {
+    groupId = "com.minecraftdimensions"
+    artifactId = "bungeesuite-teleport"
+    repoUri = "git@github.com:GenkokuServer/maven.git"
 }
 
 tasks.withType(JavaCompile) {
