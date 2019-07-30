@@ -23,9 +23,14 @@ dependencies {
 }
 
 group = 'com.minecraftdimensions'
-version = '1.0-SNAPSHOT'
 description = 'bungeesuite-teleport'
 sourceCompatibility = '1.8'
+
+release {
+    failOnCommitNeeded = false
+    failOnPublishNeeded = false
+    failOnSnapshotDependencies = false
+}
 
 gitRelease {
     groupId = "com.minecraftdimensions"
