@@ -27,8 +27,6 @@ description = 'bungeesuite-teleport'
 sourceCompatibility = '1.8'
 
 release {
-    failOnCommitNeeded = false
-    failOnPublishNeeded = false
     failOnSnapshotDependencies = false
 }
 
