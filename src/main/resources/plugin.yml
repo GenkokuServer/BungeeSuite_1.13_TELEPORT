@@ -103,8 +103,11 @@ permissions:
         description: Gives access to /back for death points
     bungeesuite.teleports.back.teleport:
         description: Gives access to /back for teleports
+    bungeesuite.teleports.back.bypass:
+        description: bypass other group server back
     bungeesuite.teleports.tp.silent:
         description: Does not send a teleport message to the player you teleported to
     bungeesuite.teleports.tp.bypass:
         description: Ability to bypass the tptoggle using /tp and this permission
-        
+    bungeesuite.teleports.command.tp.other:
+        description: teleport other player to other player

@@ -131,6 +131,7 @@ public class TeleportsManager {
             out.writeUTF( sender.getName() );
             out.writeBoolean( sender.hasPermission( "bungeesuite.teleports.back.death" ) );
             out.writeBoolean( sender.hasPermission( "bungeesuite.teleports.back.teleport" ) );
+            out.writeBoolean(sender.hasPermission("bungeesuite.teleports.back.bypass"));
         } catch ( IOException e ) {
             e.printStackTrace();
         }

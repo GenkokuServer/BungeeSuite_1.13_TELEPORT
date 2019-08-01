@@ -24,7 +24,11 @@ public class TPCommand implements CommandExecutor {
         if ( args.length == 1 ) {
             TeleportsManager.teleportToPlayer( sender, sender.getName(), args[0] );
             return true;
-        } else if ( args.length == 2 ) {
+        }
+        if (args.length == 2) {
+            if (!sender.hasPermission("bungeesuite.teleports.command.tp.other")) {
+                return false;
+            }
             TeleportsManager.teleportToPlayer( sender, args[0], args[1] );
             return true;
         }
